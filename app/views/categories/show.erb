@@ -2,6 +2,8 @@
 <a href="/categories"> GO BAK TO CATEGORIES </a>
 
 <h2>POST LISTING</h2>
+
+<a href="/posts/new"> MAKE A NEW POST YO </a>
 <% @category_posts.each do |post| %>
   <ul>
     <li><a href="/posts/<%=post.id%>"><h3><%= post.name %></h3></a></li>

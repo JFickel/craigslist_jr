@@ -58,8 +58,14 @@ get '/posts/new' do            #new
 end
 
 post '/posts' do               #create
-  Post.create(params)
-  erb :'/posts/index'
+  post = Post.new(params[:post])
+  post.category_id = 
+  if post.save           
+    redirect to '/posts'
+  else
+    @errors = post.errors.messages
+    erb :'/posts/new'
+  end
 end
 
 get '/posts/:id' do             #show

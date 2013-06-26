@@ -1,0 +1,9 @@
+<h2> Here are your posts!!!! </h2>
+
+<h4><a href="/posts/new">MAKE A NEW CATEGORY</a></h4>
+
+  <ul>
+<% @posts.each do |post| %>
+  <li><a href="/posts/<%= post.id %>"><%= post.name %></a></li>
+<% end %>
+  </ul>
