@@ -1,0 +1,9 @@
+<h1><%= @category.name %></h1>
+<a href="/categories"> GO BAK TO CATEGORIES </a>
+
+<h2>POST LISTING</h2>
+<% @category_posts.each do |post| %>
+  <ul>
+    <li><a href="/posts/<%=post.id%>"><h3><%= post.name %></h3></a></li>
+  </ul>
+<% end %>

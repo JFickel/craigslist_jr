@@ -2,4 +2,15 @@ Add your ActiveRecord models here.
 
 You can create them by being in the application root directory and running, e.g.,
 
-rake generate:model NAME=User
+rake db:create
+
+rake generate:model NAME=Post
+rake generate:model NAME=Category
+
+rake generate:migration NAME=create_posts
+rake generate:migration NAME=create_categories
+
+
+
+
+

@@ -1,0 +1,7 @@
+<h2> Here are your categories!!!! </h2>
+
+<h4><a href="/categories/new">MAKE A NEW CATEGORY</a></h4>
+
+<% @categories.each do |category| %>
+  <a href="/categories/<%= category.id %>"><%= category.name %></a>
+<% end %>
